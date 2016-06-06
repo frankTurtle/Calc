@@ -178,6 +178,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalPressed(sender: UIButton) {
+        if let currentValue = displayValue,
+            doubleFromCurrentValue = Double( currentValue ){
+                if( operation == "+" ){
+                    operand = operand! + doubleFromCurrentValue
+                }
+                if( operation == "-" ){
+                    operand = operand! - doubleFromCurrentValue
+                }
+                if( operation == "*" ){
+                    operand = operand! * doubleFromCurrentValue
+                }
+                if( operation == "/" ){
+                    operand = operand! / doubleFromCurrentValue
+                }
+                
+                displayLabel.text = operand!.description //.......... update the display text
+                operation = nil //................................... reset operation
+        }
+        else{ //..................................................... if user enters gibberish
+            displayValue = nil
+            displayLabel.text = "0"
+        }
     }
     
     @IBAction func decimalButtonPressed(sender: UIButton) {
