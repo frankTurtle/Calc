@@ -27,6 +27,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusMinusPressed(sender: UIButton) {
+        if let currentValue = displayValue,
+            doubleFromCurrentValue = Double( currentValue ){
+                displayValue = "\(-1.0 * doubleFromCurrentValue)" //. flip the value by multiplying by -1.0
+                displayLabel.text = displayValue
+        }
+        else{
+            displayValue = nil
+            displayLabel.text = "0"
+        }
     }
 
     @IBAction func multiplyPressed(sender: AnyObject) {
