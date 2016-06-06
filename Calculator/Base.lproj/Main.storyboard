@@ -17,55 +17,98 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-iA-bCa">
-                                <rect key="frame" x="114" y="322" width="49" height="50"/>
+                                <rect key="frame" x="114" y="430" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Zero"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opv-3W-HMt">
-                                <rect key="frame" x="20" y="81" width="49" height="50"/>
+                                <rect key="frame" x="20" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="One"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkU-Rc-AiA">
-                                <rect key="frame" x="114" y="81" width="49" height="50"/>
+                                <rect key="frame" x="114" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Two"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tij-ei-I2i">
+                                <rect key="frame" x="220" y="189" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Three"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-kY-2yE">
-                                <rect key="frame" x="20" y="164" width="49" height="50"/>
+                                <rect key="frame" x="20" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Four"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7R-0L-zRd">
-                                <rect key="frame" x="114" y="164" width="49" height="50"/>
+                                <rect key="frame" x="114" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Five"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dJ-ds-SIm">
-                                <rect key="frame" x="220" y="164" width="49" height="50"/>
+                                <rect key="frame" x="220" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Six"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-SL-x7q">
-                                <rect key="frame" x="20" y="237" width="49" height="50"/>
+                                <rect key="frame" x="20" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Seven"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyb-IF-JlB">
-                                <rect key="frame" x="114" y="237" width="49" height="50"/>
+                                <rect key="frame" x="114" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Eight"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUI-9v-HnT">
-                                <rect key="frame" x="220" y="237" width="49" height="50"/>
+                                <rect key="frame" x="220" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Nine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tij-ei-I2i">
-                                <rect key="frame" x="220" y="81" width="49" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXO-Cm-t9X">
+                                <rect key="frame" x="222" y="430" width="49" height="50"/>
                                 <animations/>
-                                <state key="normal" image="Three"/>
+                                <state key="normal" image="Back"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNO-gn-yk3">
+                                <rect key="frame" x="220" y="120" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="PlusMinus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylj-GQ-H2I">
+                                <rect key="frame" x="310" y="120" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Multiply"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fao-R1-C9j">
+                                <rect key="frame" x="310" y="189" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Divide"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLI-Dn-DaJ">
+                                <rect key="frame" x="310" y="272" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Minus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIX-ma-wnL">
+                                <rect key="frame" x="310" y="345" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXw-6a-S92">
+                                <rect key="frame" x="310" y="430" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Equal"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOG-XE-5Wc">
+                                <rect key="frame" x="20" y="39" width="339" height="55"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.053590973559999998" green="1" blue="0.065148849379999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,14 +116,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="435" y="337"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Back" width="49" height="50"/>
+        <image name="Divide" width="49" height="50"/>
         <image name="Eight" width="49" height="50"/>
+        <image name="Equal" width="49" height="50"/>
         <image name="Five" width="49" height="50"/>
         <image name="Four" width="49" height="50"/>
+        <image name="Minus" width="49" height="50"/>
+        <image name="Multiply" width="49" height="50"/>
         <image name="Nine" width="49" height="50"/>
         <image name="One" width="50" height="50"/>
+        <image name="Plus" width="49" height="50"/>
+        <image name="PlusMinus" width="49" height="50"/>
         <image name="Seven" width="49" height="50"/>
         <image name="Six" width="49" height="50"/>
         <image name="Three" width="49" height="50"/>
