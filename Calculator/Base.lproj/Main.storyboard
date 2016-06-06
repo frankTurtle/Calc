@@ -17,89 +17,137 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-iA-bCa">
-                                <rect key="frame" x="114" y="430" width="49" height="50"/>
+                                <rect key="frame" x="102" y="430" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Zero"/>
+                                <connections>
+                                    <action selector="zeroButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPQ-CG-ain"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opv-3W-HMt">
-                                <rect key="frame" x="20" y="189" width="49" height="50"/>
+                                <rect key="frame" x="20" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="One"/>
+                                <connections>
+                                    <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjw-QG-rtn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkU-Rc-AiA">
-                                <rect key="frame" x="114" y="189" width="49" height="50"/>
+                                <rect key="frame" x="102" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Two"/>
+                                <connections>
+                                    <action selector="twoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0b-uk-dKy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tij-ei-I2i">
-                                <rect key="frame" x="220" y="189" width="49" height="50"/>
+                                <rect key="frame" x="189" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Three"/>
+                                <connections>
+                                    <action selector="threePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BB7-Ey-Tm9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-kY-2yE">
                                 <rect key="frame" x="20" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Four"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7R-0L-zRd">
-                                <rect key="frame" x="114" y="272" width="49" height="50"/>
-                                <animations/>
-                                <state key="normal" image="Five"/>
+                                <connections>
+                                    <action selector="fourPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YX3-OO-BS4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dJ-ds-SIm">
-                                <rect key="frame" x="220" y="272" width="49" height="50"/>
+                                <rect key="frame" x="189" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Six"/>
+                                <connections>
+                                    <action selector="sixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPi-oU-FD4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-SL-x7q">
-                                <rect key="frame" x="20" y="345" width="49" height="50"/>
+                                <rect key="frame" x="20" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Seven"/>
+                                <connections>
+                                    <action selector="sevenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8h-UF-1KA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5l-Mf-nRn">
+                                <rect key="frame" x="20" y="430" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Decimal"/>
+                                <connections>
+                                    <action selector="decimalButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukl-zG-cbY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyb-IF-JlB">
-                                <rect key="frame" x="114" y="345" width="49" height="50"/>
+                                <rect key="frame" x="102" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Eight"/>
+                                <connections>
+                                    <action selector="eightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCW-R9-Bby"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUI-9v-HnT">
-                                <rect key="frame" x="220" y="345" width="49" height="50"/>
+                                <rect key="frame" x="189" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Nine"/>
+                                <connections>
+                                    <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYD-Rw-5or"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXO-Cm-t9X">
-                                <rect key="frame" x="222" y="430" width="49" height="50"/>
+                                <rect key="frame" x="189" y="430" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Back"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNO-gn-yk3">
-                                <rect key="frame" x="220" y="120" width="49" height="50"/>
+                                <rect key="frame" x="189" y="120" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="PlusMinus"/>
+                                <connections>
+                                    <action selector="plusMinusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jcp-Gq-Ml6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylj-GQ-H2I">
-                                <rect key="frame" x="310" y="120" width="49" height="50"/>
+                                <rect key="frame" x="279" y="120" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Multiply"/>
+                                <connections>
+                                    <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpG-LU-iga"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fao-R1-C9j">
-                                <rect key="frame" x="310" y="189" width="49" height="50"/>
+                                <rect key="frame" x="279" y="189" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Divide"/>
+                                <connections>
+                                    <action selector="dividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zx4-lM-DyE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLI-Dn-DaJ">
-                                <rect key="frame" x="310" y="272" width="49" height="50"/>
+                                <rect key="frame" x="279" y="272" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Minus"/>
+                                <connections>
+                                    <action selector="minusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ms-yT-Pv0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIX-ma-wnL">
-                                <rect key="frame" x="310" y="345" width="49" height="50"/>
+                                <rect key="frame" x="279" y="345" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Plus"/>
+                                <connections>
+                                    <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPw-vJ-Xth"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXw-6a-S92">
-                                <rect key="frame" x="310" y="430" width="49" height="50"/>
+                                <rect key="frame" x="279" y="430" width="49" height="50"/>
                                 <animations/>
                                 <state key="normal" image="Equal"/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfB-Cs-mX2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOG-XE-5Wc">
                                 <rect key="frame" x="20" y="39" width="339" height="55"/>
@@ -109,10 +157,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7R-0L-zRd">
+                                <rect key="frame" x="102" y="272" width="49" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Five"/>
+                                <connections>
+                                    <action selector="fivePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEv-je-US5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="ZOG-XE-5Wc" id="YK8-zl-Mdp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +180,7 @@
     </scenes>
     <resources>
         <image name="Back" width="49" height="50"/>
+        <image name="Decimal" width="49" height="50"/>
         <image name="Divide" width="49" height="50"/>
         <image name="Eight" width="49" height="50"/>
         <image name="Equal" width="49" height="50"/>
