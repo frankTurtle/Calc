@@ -104,9 +104,77 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusPressed(sender: UIButton) {
+        var valueFromDisplay: Double? //................. optional to hold the value from the display
+        
+        if let currentValue = displayValue,
+            doubleFromCurrentvalue = Double( currentValue ){ //. check both optionals and assign if appropriate
+                valueFromDisplay = doubleFromCurrentvalue
+        }
+        
+        if( valueFromDisplay == nil ){ //.................... if the value entered is invalid
+            displayLabel.text = "0" //.................... reset the label text and value to nil
+            displayValue = nil
+        }
+        else if( operand == nil ){ //..................... if operand hasnt been set yet
+            operand = valueFromDisplay //................. get the data from the label
+            operation = "-" //............................ set the operation
+            displayValue = nil //......................... clears the value b/c we already stored it
+        }
+        else if( operand != nil ){ //..................... if the operand is not nil perform the operation
+            if( operation == "+" ){
+                operand = operand! + valueFromDisplay!
+            }
+            if( operation == "-" ){
+                operand = operand! - valueFromDisplay!
+            }
+            if( operation == "*" ){
+                operand = operand! * valueFromDisplay!
+            }
+            if( operation == "/" ){
+                operand = operand! / valueFromDisplay!
+            }
+            
+            operation = "-"
+            displayValue = nil
+            displayLabel.text = operand!.description
+        }
     }
     
     @IBAction func plusPressed(sender: UIButton) {
+        var valueFromDisplay: Double? //................. optional to hold the value from the display
+        
+        if let currentValue = displayValue,
+            doubleFromCurrentvalue = Double( currentValue ){ //. check both optionals and assign if appropriate
+                valueFromDisplay = doubleFromCurrentvalue
+        }
+        
+        if( valueFromDisplay == nil ){ //.................... if the value entered is invalid
+            displayLabel.text = "0" //.................... reset the label text and value to nil
+            displayValue = nil
+        }
+        else if( operand == nil ){ //..................... if operand hasnt been set yet
+            operand = valueFromDisplay //................. get the data from the label
+            operation = "+" //............................ set the operation
+            displayValue = nil //......................... clears the value b/c we already stored it
+        }
+        else if( operand != nil ){ //..................... if the operand is not nil perform the operation
+            if( operation == "+" ){
+                operand = operand! + valueFromDisplay!
+            }
+            if( operation == "-" ){
+                operand = operand! - valueFromDisplay!
+            }
+            if( operation == "*" ){
+                operand = operand! * valueFromDisplay!
+            }
+            if( operation == "/" ){
+                operand = operand! / valueFromDisplay!
+            }
+            
+            operation = "+"
+            displayValue = nil
+            displayLabel.text = operand!.description
+        }
     }
     
     @IBAction func equalPressed(sender: UIButton) {
