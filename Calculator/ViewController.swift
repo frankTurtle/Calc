@@ -211,6 +211,18 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func backPressed(sender: UIButton) {
+        if let currentValue = displayValue {
+            displayValue = currentValue.substringToIndex( currentValue.endIndex.advancedBy(-1) ) //.. removes the last character and updates displayvalue with the newly substringed text
+            
+            if( displayValue == "" ){ //.. if its empty make it a zero
+                displayValue = "0"
+            }
+            
+            displayLabel.text = displayValue //. update the text for the label
+        }
+    }
+    
     @IBAction func decimalButtonPressed(sender: UIButton) {
         if let currentvalue = displayValue{ //.............. check to see if the display value is currently nil
             displayValue = currentvalue + "." //............ if its not then add a period to the end
